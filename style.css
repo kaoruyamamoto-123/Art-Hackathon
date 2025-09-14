@@ -1,0 +1,720 @@
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'RubikGlitch';
+    src: url(fonts/RubikGlitch-Regular.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+.gl{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid transparent;
+}
+
+.info{
+    position: relative;
+    height: 42vh;
+    width: 32%;
+    margin-top: 30vh;
+    margin-left: 10%;
+    z-index: 2;
+}
+
+.a1{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 4vw;
+    line-height: 60px;
+    margin-bottom: 1.5vh;
+}
+
+.a2{
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 1.5vw;
+}
+
+.a3{
+    position: relative;
+    width: 50%;
+    height: 4.5vh;
+    font-size: 1.2vw;
+    font-family: 'Montserrat-Medium', sans-serif;
+    text-align: center;
+    padding-top: 1vh;
+    margin-top: 2vh;
+    border-radius: 10px;
+    letter-spacing: 0.2px;
+    background: linear-gradient(145deg, rgba(77, 70, 158, 1), rgb(131, 122, 224));
+    color: white;
+}
+
+.a3:hover{
+    background: linear-gradient(145deg, rgb(93, 84, 192), rgb(148, 139, 255));
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    font-family: 'Montserrat-Medium', sans-serif;
+    height: 7vh;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.gl1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 25.8vh;
+}
+
+
+.bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, white, rgb(255, 234, 234), rgb(255, 211, 211), rgba(248, 89, 89, 1));
+    z-index: -99;
+}
+
+.b1{
+    margin-left: 10%;
+    z-index: -10;
+}
+
+.b2{
+    border-radius: 10px;
+}
+
+.b{
+    z-index: -10;
+}
+
+.d1{
+    position: relative;
+    width: 10%;
+    text-align: center;
+    padding-top: 2.5vh;
+    font-size: 1vw;
+    margin-left: 1.2vw;
+    z-index: 30;
+}
+
+.d1:hover{
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.c1{
+    width: 6%;
+    margin-left: 20%;
+}
+
+.gl1{
+    position: relative;
+}
+
+.info2{
+    position: relative;
+    width: 30%;
+    height: 65vh;
+    margin-right: 10%;
+    float: right;
+    display: flex;
+    margin-top: -50vh;
+    z-index: 2;
+}
+
+.fig{
+    position: relative;
+    width: 60%;
+    height: 30vh;
+    margin-left: 30%;
+    z-index: 2;
+    animation-name: fig;
+    animation-duration: 6.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition-timing-function: step-end;
+    margin-top: -3vh;
+}
+
+@keyframes fig{
+    0%{
+        margin-top: -3vh;
+    }
+
+    50%{
+        margin-top: 3vh;
+    }
+    100%{
+        margin-top: -3vh;
+    }
+}
+
+.fig1{
+    position: relative;
+    width: 55%;
+    height: 30vh;
+    margin-top: 20vh;
+    margin-left: -80%;
+    z-index: 2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition-timing-function: step-end;
+    animation-name: fig1;
+}
+
+@keyframes fig1{
+    50%{
+        margin-top: 1vh;
+    }
+    100%{
+        margin-top: 20vh;
+    }
+}
+
+.fig2{
+    position: relative;
+    width: 50%;
+    height: 25vh;
+    margin-left: -35%;
+    margin-top: 25vh;
+    z-index: 2;
+    animation-duration: 6.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition-timing-function: step-end;
+    animation-name: fig2;
+}
+
+@keyframes fig2{
+    60%{
+        margin-top: 15vh;
+    }
+    100%{
+        margin-top: 25vh;
+    }
+}
+
+#hhh{
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+}
+
+.line{
+    position: absolute;
+    z-index: -5;
+    border-bottom: 60px solid rgba(255, 150, 181, 0.575);
+    width: 80%;
+    transform: skew(0, -13deg);
+    margin-top: -8vh;
+    font-family: 'Montserrat-Bold',sans-serif;
+    font-size: 15vw;
+    padding-left: 20%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.l1{
+    position: absolute;
+    z-index: -4;
+    width: 100%;
+    margin-top: 0;
+    font-family: 'RubikGlitch', sans-serif;
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: -20%;
+}
+
+.info3{
+    position: relative;
+    width: 98%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 10vh;
+    float: right;
+}
+
+.sq{
+    position: relative;
+    aspect-ratio: 1;
+    height: 10vh;
+    margin-left: 2%;
+    margin-top: 3.5vh;
+    border-top: 8px solid rgba(74, 101, 171, 1);
+    border-left: 8px solid rgba(74, 101, 171, 1);
+}
+
+.v1{
+    position: relative;
+    font-family: 'Montserrat-Bold', sans-serif;
+    width: 30%;
+    font-size: 3.2vw;
+    margin-left: 8%;
+    margin-top: -5vh;
+}
+
+.v2{
+    margin-left: 8%;
+    font-family: 'Montserrat-Medium', sans-serif;
+    width: 48%;
+    margin-top: 8vh;
+    font-size: 1.5vw;
+}
+
+.kvad{
+    aspect-ratio: 1;
+    position: relative;
+    display: flex;
+    float: right;
+    height: 40vh;
+    margin-top: -35vh;
+    margin-right: 10%;
+}
+
+.kvad1{
+    aspect-ratio: 1;
+    position: relative;
+    display: flex;
+    float: right;
+    border: 5px solid white;
+    height: 40vh;
+    margin-top: -32vh;
+    margin-right: -20%;
+}
+
+.fig3{
+    position: absolute;
+    margin-top: 70vh;
+    margin-left: -1.5%;
+    aspect-ratio: 1;
+    height: 35vh;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition-timing-function: step-end;
+    animation-name: fig3;
+}
+
+@keyframes fig3{
+    60%{
+        margin-top: 73vh;
+    }
+    100%{
+        margin-top: 70vh;
+    }
+}
+
+.gl2{
+    width: 100%;
+    height: 100vh;
+    padding-top: 1%;
+}
+
+.l2{
+    width: 100%;
+    border-bottom: 50px solid rgba(171, 164, 255, 0.6);
+    position: absolute;
+    margin-top: 15vh;
+}
+
+.nap{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 8vh;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 3.2vw;
+    padding-top: 2vh;
+}
+
+.nom{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-top: 10vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+}
+
+.nnn{
+    margin-left: 5%;
+}
+
+.nom1{
+    position: relative;
+    width: 20%;
+    float: left;
+    margin-top: 3vh;
+    height: 53vh;
+    margin-right: 3%;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Montserrat-Bold', sans-serif;
+    padding-top: 2vh;
+    font-size: 1.8vw;
+    background-color: white;
+    -webkit-box-shadow: 14px 13px 12px -7px rgba(34, 60, 80, 0.33);
+    -moz-box-shadow: 14px 13px 12px -7px rgba(34, 60, 80, 0.33);
+    box-shadow: 14px 13px 12px -7px rgba(34, 60, 80, 0.33);
+    transition-duration: 0.5s;
+}
+
+.nom1:hover{
+    height: 55vh;
+    width: 21%;
+}
+
+.nom2{
+    width: 100%;
+    font-family: 'Montserrat-Medium', sans-serif;
+    text-align: center;
+    font-size: 1.3vw;
+    margin-top: 5vh;
+
+}
+
+.nnn5{
+    margin-top: 9vh
+}
+
+.icon{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.s1{
+    margin-top: 4vh;
+}
+
+.s3{
+    margin-top: -2vh;
+}
+
+.gl3{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid transparent;
+}
+
+.org{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 3.2vw;
+    margin-bottom: -3.5vh;
+    margin-left: 60%;
+    border-bottom: 13px solid rgba(255, 255, 255, 0.3);
+    width: 29.5%;
+}
+
+.info4{
+    position: relative;
+    width: 55%;
+    height: 60vh;
+    margin-top: 30vh;
+    margin-left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid transparent;
+}
+
+.sq1{
+    height: 8vh;
+    margin-top: 2vh;
+    border-left: transparent;
+    border-right: 8px solid rgba(255, 0, 0, 1);
+    border-top: 8px solid rgba(255, 0, 0, 1);
+    margin-left: 89%;
+}
+
+.org1{
+    width: 65%;
+    height: 40vh;
+    margin-left: 10%;
+}
+
+.org2{
+    font-family: 'Montserrat-Medium', sans-serif;
+    height: 10vh;
+    font-size: 1.4vw;
+}
+
+.sq2{
+    position: relative;
+    width: 21%;
+    height: 25vh;
+    display: flex;
+    float: right;
+    margin-right: 18%;
+    margin-top: -38vh;
+    background-color: rgba(39, 58, 94, 1);
+}
+
+.sq3{
+    position: relative;
+    width: 20%;
+    height: 25vh;
+    display: flex;
+    float: right;
+    margin-right: 16%;
+    margin-top: -34vh;
+    background-color: rgb(245, 227, 255);
+    font-size: 1vw;
+    font-family: 'Montserrat-Medium', sans-serif;
+    padding-left: 0.5%;
+}
+
+.fig4{
+    position: absolute;
+    aspect-ratio: 1;
+    height: 20vh;
+    margin-top: -8vh;
+    margin-left: -10%;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition-timing-function: step-end;
+    animation-name: fig4;
+}
+
+@keyframes fig4{
+    60%{
+        margin-top: -10vh;
+    }
+    100%{
+        margin-top: -8vh;
+    }
+}
+
+.gl4{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+}
+
+.info5{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid transparent;
+}
+
+.obr{
+    width: 100%;
+    height: 8vh;
+    margin-top: 2vh;
+}
+
+.l3{
+    width: 20%;
+    display: flex;
+    float: left;
+    height: 100%;
+}
+
+.obr1{
+    width: 35%;
+    display: flex;
+    float: left;
+    height: 100%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 3.2vw;
+}
+
+.l4{
+    display: flex;
+    border-bottom: 20px solid rgba(255, 233, 36, 1);
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+}
+
+.obr2{
+    margin: 0 auto;
+    width: 80%;
+    height: 60vh;
+    margin-top: 2.5vh;
+}
+
+.phone{
+    width: 100%;
+    height: 18vh;
+    margin-top: 8vh;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+.fig5{
+    position: absolute;
+    margin-left: 58%;
+    aspect-ratio: 1;
+    height: 40vh;
+    margin-top: -10vh;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition-timing-function: step-end;
+    animation-name: fig5;
+}
+
+@keyframes fig5{
+    60%{
+        margin-top: -12vh;
+    }
+    100%{
+        margin-top: -10vh;
+    }
+}
+
+.l6{
+    margin-left: -18%;
+    transform: skew(0, 13deg);
+}
+
+.l7{
+    margin-left: -20%;
+}
+
+#reg{
+    position: fixed;
+    width: 30%;
+    height: 85%;
+    background-color: white;
+    z-index: 99;
+    border-radius: 20px;
+    margin-left: 35%;
+    margin-top: 5%;
+    -webkit-box-shadow: 10px 12px 21px 3px rgba(34, 60, 80, 0.23);
+    -moz-box-shadow: 10px 12px 21px 3px rgba(34, 60, 80, 0.23);
+    box-shadow: 10px 12px 21px 3px rgba(34, 60, 80, 0.23);
+}
+
+.reg1{
+    position: relative;
+    font-family: 'Montserrat-Bold', sans-serif;
+    margin: 5% auto;
+    display: flex;
+    width: 35%;
+    font-size: 120%;
+    margin-bottom: 8%;
+}
+
+#cross {
+    position: absolute;
+    width: 8%;
+    aspect-ratio: 1;
+    display: flex;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+/* СТРАНИЦА ЗАЯВКИ */
+
+.form__button,
+.form__input{
+    font-family: 'Montserrat-Medium', sans-serif;
+    letter-spacing: 0.9px;
+    font-size: 80%;
+}
+
+form{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    letter-spacing: 0.9px;
+    font-size: 80%;
+    color: black;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.form__group{
+    position: relative;
+    margin-bottom: 6vh;
+}
+
+.form__label{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    color: black;
+    transition: 0.3s;
+}
+
+.form__input{
+    width: 100%;
+    border: none;
+    border-bottom: 2.5px solid black;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    color: rgb(0, 0, 0);
+}
+
+.form__input:focus {
+    border-bottom: 2px solid  rgba(0, 0, 0, 0.5);
+}
+
+.form__button{
+    padding: 1vh 2vw;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(145deg, rgba(77, 70, 158, 1), rgb(131, 122, 224));
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 6vh;
+    margin-top: 5vh;
+    position: relative;
+    margin-left: 19%;
+    border: 0px;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 100%;
+    width: 62%;
+}
+
+.form__button:focus,
+.form__button:hover {
+    background: linear-gradient(145deg, rgb(93, 84, 192), rgb(148, 139, 255));
+    border: 0px;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown) ~ .form__label{
+    top: -18px;
+    font-size: 90%;
+    color: rgba(0, 0, 0, 0.432)
+}
